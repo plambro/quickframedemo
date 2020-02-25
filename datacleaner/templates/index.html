@@ -1,0 +1,9 @@
+{% if datalist %}
+<ul>
+    {% for entry in datalist %}
+    <li>Object Number: {{ entry.object_number }}, Start: {{ entry.start_date }}, End: {{ entry.end_date }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<a href="/data/clean">Nothing here? Click here to clean the data.</a>
+{% endif %}
